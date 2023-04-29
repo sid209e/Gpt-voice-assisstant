@@ -10,7 +10,7 @@ recognizer = sr.Recognizer()
 microphone = sr.Microphone()
 recognizer.energy_threshold = 300
 
-openai.api_key = "your openai_api-key"
+OPENAI_API_KEY = 'your_openai_api_key' 
 
 # Initialize Amazon Polly client and set default voice
 polly_client = boto3.Session(
@@ -51,7 +51,6 @@ try:
 
         try:
             # speech recognition using whisper api
-            OPENAI_API_KEY = "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"
             value = recognizer.recognize_whisper_api(audio, api_key=OPENAI_API_KEY)
             print("You said:{}".format(value))
             if "change voice" in value.lower():
