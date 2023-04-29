@@ -20,30 +20,46 @@ OpenAI API key
 Amazon Web Services (AWS) account with access to Amazon Polly  
 
 **Installation**  
-Clone this repository to your local machine.  
-Install the required dependencies using ***pip install -r requirements.txt***.  
-Set up an OpenAI API key and set it as an environment variable named OPENAI_API_KEY.  
-Run ***main.py*** to start the assistant.  
+1. Clone this repository to your local machine.  
+2. Install the required dependencies using ***pip install -r requirements.txt***.  
+3. Set up an OpenAI API key and set it as an environment variable named OPENAI_API_KEY.  
+4. Run ***main.py*** to start the assistant.  
 
 **Configuration**  
 You can configure the following settings in the main.py file:
 
-***aws_access_key_id***: Your AWS access key ID  
-***aws_secret_access_key***: Your AWS secret access key  
-***region_name***: The AWS region to use  
-***default_voice***: The default voice to use for Amazon Polly  
-***openai.api_key***: Your OpenAI API key  
-***recognizer.energy_threshold***: The minimum energy threshold for the microphone to detect speech  
+* ***aws_access_key_id***: Your AWS access key ID  
+* ***aws_secret_access_key***: Your AWS secret access key  
+* ***region_name***: The AWS region to use  
+* ***default_voice***: The default voice to use for Amazon Polly  
+* ***openai.api_key***: Your OpenAI API key  
+* ***recognizer.energy_threshold***: The minimum energy threshold for the microphone to detect speech  
 
 You can also configure the following settings in the openai.Completion.create() function:  
 
-***model***: The OpenAI model to use for natural language processing  
-***prompt***: The prompt to use for generating the response  
-***temperature***: The temperature to use for generating the response  
-***max_tokens***: The maximum number of tokens to generate for the response  
-***top_p***: The top p value to use for generating the response  
-***frequency_penalty***: The frequency penalty to use for generating the response  
-***presence_penalty***: The presence penalty to use for generating the response  
+* ***model***: The OpenAI model to use for natural language processing  
+* ***prompt***: The prompt to use for generating the response  
+* ***temperature***: The temperature to use for generating the response  
+* ***max_tokens***: The maximum number of tokens to generate for the response  
+* ***top_p***: The top p value to use for generating the response  
+* ***frequency_penalty***: The frequency penalty to use for generating the response  
+* ***presence_penalty***: The presence penalty to use for generating the response  
+
+**Future Works**  
+1. Implement speech-to-text in multiple languages.
+
+2. Implement text-to-speech in multiple voices.
+
+3. Implement sentiment analysis.
+
+4. Implement chatbot functionality.
+
+5. Implement custom commands.
+
+
+
+
+
 
 
 **Contributions**  
